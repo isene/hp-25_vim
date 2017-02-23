@@ -15,11 +15,11 @@ elseif exists("b:current_syntax")
 endif
 
 syntax match  hp25LineNumber	"^ *[0-9]*"
-syntax match  hp25Cond		"X[<>!=]*[Y0]"
-syntax match  hp25CMD		"[A-Z]\{3,}"
+syntax match  hp25f		"f [0-9A-Za-z<>!=\-+]*"
+syntax match  hp25g		"g [0-9A-Za-z<>!=\-+]*"
 syntax match  hp25GTO		"GTO.*"
-syntax match  hp25f		"f "
-syntax match  hp25g		"g "
+syntax match  hp25Lbl		"Lbl \d\d"
+syntax match  hp25num		"\t\d"
 
 " Define the default highlighting.
 " For version 5.7 and earlier: only when not done already
@@ -33,11 +33,11 @@ if version >= 508 || !exists("did_crontab_syn_inits")
   endif
 
   HiLink hp25LineNumber		Number
-  HiLink hp25Cond		Comment
-  HiLink hp25CMD		Macro
-  HiLink hp25GTO		Structure
   HiLink hp25f			Statement
   HiLink hp25g			Function
+  HiLink hp25GTO		Structure
+  HiLink hp25Lbl		Structure
+  HiLink hp25num		Define
 
   delcommand HiLink
 endif

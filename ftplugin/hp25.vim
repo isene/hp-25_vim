@@ -16,16 +16,16 @@ let b:did_ftplugin = 1
 set nrformats-=octal
 
 map <CR> :call Renumber()<CR>
-imap <CR> <CR><C-Y><C-Y><C-Y><SPACE><ESC>0<C-A>:call Renumber()<CR>A
+imap <CR> <CR><C-Y><C-Y><SPACE><ESC>0<C-A>:call Renumber()<CR>A
 
 if !exists("*s:Renumber")
     function Renumber()
-	let s:linenumber = line(".")
-	let s:colnumber = col(".")
-	call cursor(2,1)
-	let @r = 1
-        exe "normal 0cw".printf("%03d", @r)
-	2,$s#^\d\d\d#\=printf("%03d", @r + setreg('r', @r+1))#
-	call cursor(s:linenumber,s:colnumber)
+			let s:linenumber = line(".")
+			let s:colnumber = col(".")
+			call cursor(2,1)
+			let @r = 1
+			exe "normal 0cw".printf("%02d", @r)
+			2,$s#^\d\d#\=printf("%02d", @r + setreg('r', @r+1))#
+			call cursor(s:linenumber,s:colnumber)
     endfunction
 endif

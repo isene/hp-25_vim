@@ -15,6 +15,7 @@ elseif exists("b:current_syntax")
 endif
 
 syntax match  hp25LineNumber	"^ *[0-9]*"
+syntax match  hp25Cond		" [A-Z<>=0-9].\{-}?[A-Z0-9]\{-}\( \|$\)"
 syntax match  hp25f		"f [0-9A-Za-z<>!=\-+]*"
 syntax match  hp25g		"g [0-9A-Za-z<>!=\-+]*"
 syntax match  hp25GTO		"GTO.*"
@@ -38,6 +39,7 @@ if version >= 508 || !exists("did_crontab_syn_inits")
   HiLink hp25GTO		Structure
   HiLink hp25Lbl		Structure
   HiLink hp25num		Define
+  HiLink hp25Cond		Comment
 
   delcommand HiLink
 endif

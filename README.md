@@ -23,3 +23,6 @@ Drop the hp25.vim syntax file into your .vim/ftplugin/ directory and register th
 `autocmd BufRead,BufNewFile *.25 :source ~/.vim/ftplugin/hp25.vim`
 
 ...and you are ready for easy HP-25 program writing.
+
+### License
+This software is released into the Public Domain.

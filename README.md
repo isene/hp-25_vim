@@ -1,4 +1,11 @@
 # hp-25_vim
+
+[![HP-25](https://img.shields.io/badge/HP--25-Calculator-orange)](https://en.wikipedia.org/wiki/HP-25)
+[![Vim Script](https://img.shields.io/badge/Vim%20Script-019733?style=flat&logo=vim&logoColor=white)](https://www.vim.org/)
+[![License](https://img.shields.io/badge/License-Public%20Domain-brightgreen.svg)](https://unlicense.org/)
+[![GitHub stars](https://img.shields.io/github/stars/isene/hp-25_vim.svg)](https://github.com/isene/hp-25_vim/stargazers)
+[![Stay Amazing](https://img.shields.io/badge/Stay-Amazing-blue.svg)](https://isene.org)
+
 ## HP-25: Syntax and filetype plugin
 
 ### VIM syntax highlighting for HP-25 program files (\*.25)

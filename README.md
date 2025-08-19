@@ -1,6 +1,7 @@
 # hp-25_vim
 
 <img src="img/hp25vim_logo.svg" align="left" width="150" height="150">
+<br clear="left"/>
 
 [![HP-25](https://img.shields.io/badge/HP--25-Calculator-orange)](https://en.wikipedia.org/wiki/HP-25)
 [![Vim Script](https://img.shields.io/badge/Vim%20Script-019733?style=flat&logo=vim&logoColor=white)](https://www.vim.org/)
